@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400245DD1B6865BB00B2569C /* 毛笔圈.png in Resources */ = {isa = PBXBuildFile; fileRef = 400245DB1B6865BB00B2569C /* 毛笔圈.png */; };
+		400245DE1B6865BB00B2569C /* 毛笔圈@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400245DC1B6865BB00B2569C /* 毛笔圈@2x.png */; };
 		40F6B5B21B5F517200A7BC26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5B11B5F517200A7BC26 /* main.m */; };
 		40F6B5B51B5F517200A7BC26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5B41B5F517200A7BC26 /* AppDelegate.m */; };
 		40F6B5B81B5F517200A7BC26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5B71B5F517200A7BC26 /* ViewController.m */; };
@@ -54,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		400245DB1B6865BB00B2569C /* 毛笔圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "毛笔圈.png"; sourceTree = "<group>"; };
+		400245DC1B6865BB00B2569C /* 毛笔圈@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "毛笔圈@2x.png"; sourceTree = "<group>"; };
 		40F6B5AC1B5F517200A7BC26 /* ZYJWidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYJWidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F6B5B01B5F517200A7BC26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40F6B5B11B5F517200A7BC26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 		40F6B5DD1B5F519800A7BC26 /* ZYJWidget */ = {
 			isa = PBXGroup;
 			children = (
+				400245DB1B6865BB00B2569C /* 毛笔圈.png */,
+				400245DC1B6865BB00B2569C /* 毛笔圈@2x.png */,
 				40F6B5E01B5F519800A7BC26 /* TodayViewController.h */,
 				40F6B5E11B5F519800A7BC26 /* TodayViewController.m */,
 				40F6B5ED1B5F520D00A7BC26 /* ZYJCollectionViewCell.h */,
@@ -316,7 +322,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400245DD1B6865BB00B2569C /* 毛笔圈.png in Resources */,
 				40F6B5F11B5F520D00A7BC26 /* ZYJCollectionViewCell.xib in Resources */,
+				400245DE1B6865BB00B2569C /* 毛笔圈@2x.png in Resources */,
 				40F6B5E41B5F519800A7BC26 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +571,7 @@
 				40F6B5D11B5F517200A7BC26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40F6B5D21B5F517200A7BC26 /* Build configuration list for PBXNativeTarget "ZYJWidgetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +580,7 @@
 				40F6B5D41B5F517200A7BC26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40F6B5E81B5F519800A7BC26 /* Build configuration list for PBXNativeTarget "ZYJWidget" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +589,7 @@
 				40F6B5EA1B5F519800A7BC26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,7 +18,9 @@
     UICollectionView *myCollectView;
     
     NSMutableArray *dataArr;
-    
+    NSMutableArray *chineseArr;
+    NSDate* today;
+
 }
 @end
 
@@ -53,9 +55,12 @@ static NSCalendar *currentCalendar;
         currentCalendar = [NSCalendar currentCalendar];
     }
     NSDateComponents *dateComponents = [currentCalendar components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:[NSDate date]];
+    
+    today =  [currentCalendar dateFromComponents:dateComponents];
+
     //获得当前月的第一天时间
-    NSDate* firstDay =  [currentCalendar dateFromComponents:dateComponents];
     dateComponents.day = 1;
+    NSDate* firstDay =  [currentCalendar dateFromComponents:dateComponents];
     
     //获得第一天 是周几
     int firstWeekDay = (int)[currentCalendar components:NSCalendarUnitWeekday fromDate:firstDay].weekday;
@@ -68,11 +73,16 @@ static NSCalendar *currentCalendar;
     if (dataArr == nil) {
         dataArr = [NSMutableArray arrayWithCapacity:10];
     }
+    if (chineseArr == nil) {
+        chineseArr = [NSMutableArray arrayWithCapacity:10];
+    }
+    
     for (int i=0;i<42; i++) {
         //剩下的简单了  将第一行第一天  不断的加一  然后保存起来  就可以获得整个月的 时间集合了
         dateComponents.day = dayDiff;
         NSDate* date = [currentCalendar dateFromComponents:dateComponents];
         [dataArr addObject:date];
+        [chineseArr addObject:[self getChineseDayWithDate:date]];
         dayDiff ++;
     }
     
@@ -135,7 +145,7 @@ static NSCalendar *currentCalendar;
     NSDateComponents* dateComponents = [currentCalendar components:NSCalendarUnitDay fromDate:date];
     cell.label1.text = [NSString stringWithFormat:@"%d",(int)dateComponents.day];
     
-    cell.label2.text = [self getChineseDayWithDate:date];
+    cell.label2.text = [chineseArr objectAtIndex:indexPath.row];
     //    _chineseCal.text = [CalenderTool getChineseDayWithDate:date];
     cell.label3.hidden = YES;
     if(indexPath.row % 7 == 0 || (indexPath.row+1) % 7 == 0){
@@ -143,7 +153,10 @@ static NSCalendar *currentCalendar;
         cell.label2.textColor = [UIColor orangeColor];
         cell.label3.textColor = [UIColor orangeColor];
     }
-    
+    if ([date isEqualToDate:today]) {
+        UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"毛笔圈"]];
+        [cell.contentView addSubview:imageView];
+    }
     return cell;
     
 }
