@@ -14,11 +14,6 @@
 #define kScreen_height   [[UIScreen mainScreen] bounds].size.height
 #define kScreen_width    [[UIScreen mainScreen] bounds].size.width
 
-#ifdef APPSTORE
-#define widgetIdentifier @"group.shiftAsstant.widget"
-#else
-#define widgetIdentifier @"group.com.SGAI.ShiftAssitant"
-#endif
 
 @interface TodayViewController () <NCWidgetProviding>
 {
@@ -58,17 +53,6 @@ static NSCalendar *currentCalendar;
     }
     [dateFormatter setDateFormat:@"yyyy MM dd"];
     [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
-    isMondayFirst = 0;
-    NSUserDefaults *userDefaultsOfWidget = [[NSUserDefaults alloc] initWithSuiteName:widgetIdentifier];
-    NSNumber *detail = [userDefaultsOfWidget objectForKey:@"FirstDay"];
-    isMondayFirst = [detail intValue];
-    if (isMondayFirst) {
-        NSArray *arr = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
-        for (int i = 0; i<7; i++) {
-            UILabel *label = _labelArr[i];
-            label.text = arr[i];
-        }
-    }
     
     //gqq
     //初始化self.date
@@ -81,25 +65,13 @@ static NSCalendar *currentCalendar;
 
 }
 -(void)jumpToApp{
-    [self.extensionContext openURL:[NSURL URLWithString:@"shiftassitantwidget://"] completionHandler:^(BOOL success) {
+    [self.extensionContext openURL:[NSURL URLWithString:@"yourApp://"] completionHandler:^(BOOL success) {
         NSLog(@"open url result:%d",success);
     }];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSUserDefaults *userDefaultsOfWidget = [[NSUserDefaults alloc] initWithSuiteName:widgetIdentifier];
-    NSNumber *detail = [userDefaultsOfWidget objectForKey:@"FirstDay"];
-    isMondayFirst = [detail intValue];
-    if (isMondayFirst) {
-        NSArray *arr = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
-        for (int i = 0; i<7; i++) {
-            UILabel *label = _labelArr[i];
-            label.text = arr[i];
-        }
-    }
-    
     [self configDayViews];
-
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
