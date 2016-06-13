@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		400245DD1B6865BB00B2569C /* 毛笔圈.png in Resources */ = {isa = PBXBuildFile; fileRef = 400245DB1B6865BB00B2569C /* 毛笔圈.png */; };
 		400245DE1B6865BB00B2569C /* 毛笔圈@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400245DC1B6865BB00B2569C /* 毛笔圈@2x.png */; };
+		40578BF91D0E342A00874079 /* turnLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40578BF51D0E342A00874079 /* turnLeft@2x.png */; };
+		40578BFA1D0E342A00874079 /* turnLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40578BF61D0E342A00874079 /* turnLeft@3x.png */; };
+		40578BFB1D0E342A00874079 /* turnRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40578BF71D0E342A00874079 /* turnRight@2x.png */; };
+		40578BFC1D0E342A00874079 /* turnRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40578BF81D0E342A00874079 /* turnRight@3x.png */; };
+		40578C021D0E351200874079 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40578BFE1D0E351200874079 /* TodayViewController.m */; };
+		40578C031D0E351200874079 /* widgetDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40578C001D0E351200874079 /* widgetDayView.m */; };
+		40578C041D0E351200874079 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40578C011D0E351200874079 /* MainInterface.storyboard */; };
 		40F6B5B21B5F517200A7BC26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5B11B5F517200A7BC26 /* main.m */; };
 		40F6B5B51B5F517200A7BC26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5B41B5F517200A7BC26 /* AppDelegate.m */; };
 		40F6B5B81B5F517200A7BC26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5B71B5F517200A7BC26 /* ViewController.m */; };
@@ -17,11 +24,7 @@
 		40F6B5C01B5F517200A7BC26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F6B5BE1B5F517200A7BC26 /* LaunchScreen.xib */; };
 		40F6B5CC1B5F517200A7BC26 /* ZYJWidgetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5CB1B5F517200A7BC26 /* ZYJWidgetDemoTests.m */; };
 		40F6B5DC1B5F519800A7BC26 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F6B5DB1B5F519800A7BC26 /* NotificationCenter.framework */; };
-		40F6B5E21B5F519800A7BC26 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5E11B5F519800A7BC26 /* TodayViewController.m */; };
-		40F6B5E41B5F519800A7BC26 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F6B5E31B5F519800A7BC26 /* MainInterface.storyboard */; };
 		40F6B5E71B5F519800A7BC26 /* ZYJWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 40F6B5D91B5F519800A7BC26 /* ZYJWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		40F6B5F01B5F520D00A7BC26 /* ZYJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F6B5EE1B5F520D00A7BC26 /* ZYJCollectionViewCell.m */; };
-		40F6B5F11B5F520D00A7BC26 /* ZYJCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F6B5EF1B5F520D00A7BC26 /* ZYJCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,15 @@
 /* Begin PBXFileReference section */
 		400245DB1B6865BB00B2569C /* 毛笔圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "毛笔圈.png"; sourceTree = "<group>"; };
 		400245DC1B6865BB00B2569C /* 毛笔圈@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "毛笔圈@2x.png"; sourceTree = "<group>"; };
+		40578BF51D0E342A00874079 /* turnLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turnLeft@2x.png"; sourceTree = "<group>"; };
+		40578BF61D0E342A00874079 /* turnLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turnLeft@3x.png"; sourceTree = "<group>"; };
+		40578BF71D0E342A00874079 /* turnRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turnRight@2x.png"; sourceTree = "<group>"; };
+		40578BF81D0E342A00874079 /* turnRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turnRight@3x.png"; sourceTree = "<group>"; };
+		40578BFD1D0E351200874079 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		40578BFE1D0E351200874079 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		40578BFF1D0E351200874079 /* widgetDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = widgetDayView.h; sourceTree = "<group>"; };
+		40578C001D0E351200874079 /* widgetDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = widgetDayView.m; sourceTree = "<group>"; };
+		40578C011D0E351200874079 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		40F6B5AC1B5F517200A7BC26 /* ZYJWidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYJWidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F6B5B01B5F517200A7BC26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40F6B5B11B5F517200A7BC26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,12 +86,6 @@
 		40F6B5D91B5F519800A7BC26 /* ZYJWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZYJWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F6B5DB1B5F519800A7BC26 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		40F6B5DF1B5F519800A7BC26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40F6B5E01B5F519800A7BC26 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		40F6B5E11B5F519800A7BC26 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		40F6B5E31B5F519800A7BC26 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
-		40F6B5ED1B5F520D00A7BC26 /* ZYJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYJCollectionViewCell.h; sourceTree = "<group>"; };
-		40F6B5EE1B5F520D00A7BC26 /* ZYJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYJCollectionViewCell.m; sourceTree = "<group>"; };
-		40F6B5EF1B5F520D00A7BC26 /* ZYJCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYJCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,14 +187,17 @@
 		40F6B5DD1B5F519800A7BC26 /* ZYJWidget */ = {
 			isa = PBXGroup;
 			children = (
+				40578BF51D0E342A00874079 /* turnLeft@2x.png */,
+				40578BF61D0E342A00874079 /* turnLeft@3x.png */,
+				40578BF71D0E342A00874079 /* turnRight@2x.png */,
+				40578BF81D0E342A00874079 /* turnRight@3x.png */,
 				400245DB1B6865BB00B2569C /* 毛笔圈.png */,
 				400245DC1B6865BB00B2569C /* 毛笔圈@2x.png */,
-				40F6B5E01B5F519800A7BC26 /* TodayViewController.h */,
-				40F6B5E11B5F519800A7BC26 /* TodayViewController.m */,
-				40F6B5ED1B5F520D00A7BC26 /* ZYJCollectionViewCell.h */,
-				40F6B5EE1B5F520D00A7BC26 /* ZYJCollectionViewCell.m */,
-				40F6B5EF1B5F520D00A7BC26 /* ZYJCollectionViewCell.xib */,
-				40F6B5E31B5F519800A7BC26 /* MainInterface.storyboard */,
+				40578BFD1D0E351200874079 /* TodayViewController.h */,
+				40578BFE1D0E351200874079 /* TodayViewController.m */,
+				40578BFF1D0E351200874079 /* widgetDayView.h */,
+				40578C001D0E351200874079 /* widgetDayView.m */,
+				40578C011D0E351200874079 /* MainInterface.storyboard */,
 				40F6B5DE1B5F519800A7BC26 /* Supporting Files */,
 			);
 			path = ZYJWidget;
@@ -323,9 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				400245DD1B6865BB00B2569C /* 毛笔圈.png in Resources */,
-				40F6B5F11B5F520D00A7BC26 /* ZYJCollectionViewCell.xib in Resources */,
+				40578BFA1D0E342A00874079 /* turnLeft@3x.png in Resources */,
 				400245DE1B6865BB00B2569C /* 毛笔圈@2x.png in Resources */,
-				40F6B5E41B5F519800A7BC26 /* MainInterface.storyboard in Resources */,
+				40578BF91D0E342A00874079 /* turnLeft@2x.png in Resources */,
+				40578C041D0E351200874079 /* MainInterface.storyboard in Resources */,
+				40578BFC1D0E342A00874079 /* turnRight@3x.png in Resources */,
+				40578BFB1D0E342A00874079 /* turnRight@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,8 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F6B5F01B5F520D00A7BC26 /* ZYJCollectionViewCell.m in Sources */,
-				40F6B5E21B5F519800A7BC26 /* TodayViewController.m in Sources */,
+				40578C021D0E351200874079 /* TodayViewController.m in Sources */,
+				40578C031D0E351200874079 /* widgetDayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
