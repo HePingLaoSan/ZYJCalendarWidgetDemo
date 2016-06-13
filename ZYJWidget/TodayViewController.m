@@ -83,14 +83,11 @@ static NSCalendar *currentCalendar;
         currentCalendar = [NSCalendar currentCalendar];
     }
     
-    dateTodayComponents =[currentCalendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond fromDate:self.date];
+    dateTodayComponents =[currentCalendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:self.date];
     
-    currentMonthComponents = [currentCalendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond fromDate:[NSDate date]];
+    currentMonthComponents = [currentCalendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
     
-    dateTodayComponents.hour = 0;
-    dateTodayComponents.minute = 0;
-    dateTodayComponents.second = 0;
-    today =  [currentCalendar dateFromComponents:dateTodayComponents];
+    today =  [currentCalendar dateFromComponents:currentMonthComponents];
     
     titleLabel.text = [NSString stringWithFormat:@"%ld 年 %ld 月",(long)dateTodayComponents.year,(long)dateTodayComponents.month];
     
